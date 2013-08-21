@@ -1,0 +1,26 @@
+.main {
+	width: 600px;
+	margin: 0px auto;
+	border: 1px dotted black;
+	padding: 20px;
+}
+
+.taskTable {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0px auto;
+	width: 400px;
+}
+
+.taskTable td {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.taskTable tr.N {
+	background-color: #cc6622;
+}
+
+.taskTable tr.Y {
+	background-color: #99ff55;
+}

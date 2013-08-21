@@ -1,0 +1,1 @@
+CREATE TABLE TASKS (id INT PRIMARY KEY, name VARCHAR(40), description VARCHAR(1000), priority INT, done CHAR(1))

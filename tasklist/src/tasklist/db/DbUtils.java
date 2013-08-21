@@ -30,16 +30,6 @@ public class DbUtils {
 		return conn;
 	}
 
-	private static void createTables() {
-		try {
-			stmt = getConnection().createStatement();
-			stmt.executeUpdate("CREATE TABLE TASKS (id INT PRIMARY KEY, name VARCHAR(40), description VARCHAR(1000), priority INT, done CHAR(1))");
-			stmt.close();
-		} catch (SQLException sqlExcept) {
-			sqlExcept.printStackTrace();
-		}
-	}
-
 	public static void insertTask(Task t) {
 		try {
 			stmt = getConnection().createStatement();
@@ -125,20 +115,5 @@ public class DbUtils {
 			sqlExcept.printStackTrace();
 		}
 		return t;
-	}
-
-	private static void shutdown() {
-		try {
-			if (stmt != null) {
-				stmt.close();
-			}
-			if (conn != null) {
-				DriverManager.getConnection(dbURL + ";shutdown=true");
-				conn.close();
-			}
-		} catch (SQLException sqlExcept) {
-
-		}
-
 	}
 }

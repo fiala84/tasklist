@@ -6,7 +6,6 @@
 <!DOCTYPE html>
 <html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <style type="text/css">
 	.main {
 		width: 600px;
@@ -42,7 +41,7 @@
 			<p><label class="field">Done: </label><input type="checkbox" name="done" checked="${task.done}" onclick="this.value = this.checked;" /></p>
 			<input type="submit" value="Save"/>
 		</form>
-		<a href="/tasklist/tasks" class="button">cancel</a>
+		<a href="tasks" class="button">cancel</a>
        	</div>
     </body>
 </html>

@@ -15,14 +15,6 @@ function deleteTask(){
 	    success: function() { alert('DELETE completed'); }
 	});	
 }
-function editTask(){
-	$.ajax({
-	    url: '/tasklist/edit/1',
-	    type: 'GET',
-	    data: 'ID=1&Name=John&Age=10', // or $('#myform').serializeArray()
-	    success: function() { alert('DELETE completed'); }
-	});	
-}
 </script>
 <style type="text/css">
 	body {
@@ -126,7 +118,6 @@ function editTask(){
         	</c:forEach>
         </table>
         <form style="width: 100px; margin: 0px auto;" method="post"><input class="button addButton" type="submit" value="ADD TASK"/></form>
-        <form  method="delete" action="/tasklist/tasks/1"><input class="button addButton" type="submit" value="DEL"/></form>
         </div>
     </body>
 </html>

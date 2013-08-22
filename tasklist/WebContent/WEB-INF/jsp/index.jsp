@@ -7,11 +7,11 @@
 <html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 <script>
+// toto nefunguje, server mi vracel error 405 na DELETE typ requestu
 function deleteTask(){
 	$.ajax({
 	    url: '/tasks/1',
 	    type: 'DELETE',
-	    data: 'ID=1&Name=John&Age=10', // or $('#myform').serializeArray()
 	    success: function() { alert('DELETE completed'); }
 	});	
 }
